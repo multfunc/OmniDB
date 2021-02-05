@@ -28,10 +28,20 @@ CSRF_COOKIE_NAME = 'omnidb_csrftoken'
 ALLOWED_HOSTS = ['*']
 
 # Database
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(HOME_DIR, 'omnidb.db')
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(HOME_DIR, 'omnidb.db')
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'omnidb',
+        'USER':'root',
+        'PASSWORD':'&*($%!Feng0',
+        'HOST':'111.229.3.130',
+        'PORT':'3306'
     }
 }
 
