@@ -13,3 +13,4 @@ PyMySQL
 sqlparse
 pgspecial
 django-sass
+mysqlclient
